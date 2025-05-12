@@ -50,7 +50,7 @@ resource "aws_eip" "nat" {
   domain = "vpc"
 
   tags = {
-    Name = "${var.cluster_name}-nat-${count.indext+1}"
+    Name = "${var.cluster_name}-nat-${count.index+1}"
   }
 }
 
