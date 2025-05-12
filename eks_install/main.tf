@@ -27,3 +27,11 @@ module "VPC" {
   public_subnet_cidr = var.public_subnet_cidr
   availability_zones = var.availability_zones
 }
+
+module "EKS" {
+  source = "./Modules/EKS"
+  cluster_name = var.cluster_name
+  cluster_version = var.cluster_version
+  subnet_id      = module.VPC.private_subnet_cidr
+  node_groups = var.node_groups
+}
