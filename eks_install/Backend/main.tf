@@ -22,9 +22,9 @@ resource "aws_dynamodb_table" "state-locking" {
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
   write_capacity = 20
-  hash_key = "LockId"
+  hash_key = "LockID"
   attribute {
-    name = "LockId"
+    name = "LockID"
     type = "S"
   }
 }
