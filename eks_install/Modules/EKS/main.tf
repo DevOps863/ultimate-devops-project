@@ -54,7 +54,7 @@ resource "aws_iam_role_policy_attachment" "node-policy" {
   ])
 
   policy_arn = each.value
-  role       = aws_iam_role.node-role.name
+  role       = aws_iam_role.node_role.name
 }
 
 resource "aws_eks_node_group" "eks_cluster_node_group" {

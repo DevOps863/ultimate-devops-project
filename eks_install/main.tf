@@ -32,6 +32,6 @@ module "EKS" {
   source = "./Modules/EKS"
   cluster_name = var.cluster_name
   cluster_version = var.cluster_version
-  subnet_id      = module.VPC.private_subnet_cidr
+  subnet_id      = module.VPC.private-subnet
   node_groups = var.node_groups
 }

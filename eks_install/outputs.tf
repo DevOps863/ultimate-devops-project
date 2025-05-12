@@ -1,14 +1,14 @@
 output "cluster_endpoint" {
   description = "EKS cluster endpoint"
-  value       = module.eks.cluster_endpoint
+  value       = module.EKS.cluster_endpoint
 }
 
 output "cluster_name" {
   description = "EKS cluster name"
-  value       = module.eks.cluster_name
+  value       = module.EKS.cluster_name
 }
 
 output "vpc_id" {
   description = "VPC ID"
-  value       = module.vpc.vpc_id
+  value       = module.VPC.vpc_id
 }
