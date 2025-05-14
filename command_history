@@ -1,0 +1,88 @@
+root@linux:~# history
+    1  passwd root
+    2  vi /etc/ssh/sshd_config
+    3  systemctl restart sshd
+    4  systemctl restart ssh
+    5  systemctl restart sshd
+    6  useradd bhargav
+    7  passwd bhargav
+    8  usermod -aG sudo bhargav
+    9  id bhargav
+   10  vi /etc/ssh/sshd_config
+   11  systemctl restart sshd
+   12  systemctl restart ssh
+   13  cat /etc/ssh/sshd_config
+   14  grep -i 'passwordauthentication' /etc/ssh/sshd_config.d/*.conf
+   15  cd /etc/ssh/sshd_config.d/
+   16  ls -lrt
+   17  vi 60-cloudimg-settings.conf
+   18  systemctl restart ssh
+   19  cd ~
+   20  userdel bhargav
+   21  kill -9 2479
+   22  userdel bhargav
+   23  useradd -m -d /home/ram -s /bin/bash ram
+   24  id ram
+   25  passwd ram
+   26  usermod -aG sudo ram
+   27  ls -lrt
+   28  git clone https://github.com/DevOps863/ultimate-devops-project.git
+   29  ls -lrt
+   30  cd ultimate-devops-project/
+   31  terraform init
+   32  ls -lrt
+   33  cd eks_install/
+   34  terraform init
+   35  aws configure
+   36  terraform init
+   37  terraform plan
+   38  terraform apply --auto-approve
+   39  skubectl get context
+   40  kubectl get context
+   41  kubectl get config
+   42  cd ..
+   43  git pull
+   44  ls -lrt
+   45  aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
+   46  kubectl get context
+   47  kubectl get config
+   48  kubectl config view
+   49  kubectl config current-context
+   50  kubectl get nodes
+   51  kubectl get pods
+   52  cd kubernetes/
+   53  ls -lrt
+   54  kubectl get all
+   55  kubectl apply -f serive_account.yaml
+   56  kubectl get all
+   57  kubectl get sa
+   58  kubectl get pods
+   59  kubectl apply -f complete_deploy.yaml
+   60  kubectl get pods
+   61  kubectl get pods -w
+   62  kubectl get pods
+   63  kubectl get svc
+   64  kubectl get pods
+   65  kubectl get svc | grep frontend
+   66  kubectl edit svc opentelemetry-demo-frontendproxy
+   67  kubectl get svc
+   68  kubectl get svc | grep frontend
+   69  kubectl logs opentelemetry-demo-frontendproxy
+   70  kubectl get ns
+   71  kubectl logs opentelemetry-demo-frontendproxy -n kube-system
+   72  kubectl logs opentelemetry-demo-frontendproxy -n kube-public
+   73  kubectl logs opentelemetry-demo-frontendproxy -n kube-node-lease
+   74  kubectl get pods | grep frontendproxy
+   75  kubectl get logs opentelemetry-demo-frontendproxy-5b6d4f87f7-lgtfc
+   76  kubectl logs opentelemetry-demo-frontendproxy-5b6d4f87f7-lgtfc
+   77  kubectl edit svc opentelemetry-demo-frontendproxy
+   78  ls -lrt
+   79  cd ultimate-devops-project/
+   80  ls -lrt
+   81  cd kubernetes/
+   82  ls -lrt
+   83  cd ../..
+   84  cd ultimate-devops-project/
+   85  git pull
+   86  history
+root@linux:~#
